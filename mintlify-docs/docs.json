@@ -43,7 +43,8 @@
           "features/live-meeting",
           "features/meeting-review",
           "features/action-items-and-follow-through",
-          "features/knowledge-base"
+          "features/knowledge-base",
+          "features/people"
         ]
       },
       {
