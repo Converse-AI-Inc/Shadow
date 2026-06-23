@@ -1,0 +1,112 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Shadow Documentation",
+  "description": "Customer-facing documentation for Shadow: setup, onboarding, meeting workflows, integrations, and troubleshooting.",
+  "colors": {
+    "primary": "#0092B4",
+    "light": "#15B7D8",
+    "dark": "#0B6E88"
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Start Here",
+        "pages": [
+          "index",
+          "quickstart",
+          "journeys/mac-outlook-teams-salesforce",
+          "journeys/enterprise-admin",
+          "journeys/enterprise-member",
+          "journeys/individual-google"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "pages": [
+          "getting-started/system-requirements",
+          "getting-started/permissions",
+          "getting-started/connect-outlook",
+          "getting-started/connect-salesforce"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/dashboard",
+          "features/meeting-prep",
+          "features/live-meeting",
+          "features/meeting-review",
+          "features/action-items-and-follow-through",
+          "features/knowledge-base"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/overview",
+          "integrations/microsoft-teams",
+          "integrations/salesforce",
+          "integrations/slack",
+          "integrations/notion",
+          "integrations/jira",
+          "integrations/linear",
+          "integrations/google-workspace"
+        ]
+      },
+      {
+        "group": "Product Tour",
+        "pages": [
+          "features/product-tour",
+          "features/screenshots"
+        ]
+      },
+      {
+        "group": "Support",
+        "pages": [
+          "settings/preferences-and-limits",
+          "support/faq-and-troubleshooting"
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://shadowlabs.ai"
+      },
+      {
+        "label": "Support",
+        "href": "mailto:hello@shadowlabs.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Contact Shadow",
+      "href": "mailto:hello@shadowlabs.ai"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/shadowlabs"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  }
+}

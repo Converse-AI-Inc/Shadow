@@ -1,0 +1,69 @@
+---
+title: "System Requirements"
+description: "What users need before installing and running Shadow."
+---
+
+Shadow is designed around a Mac desktop workflow.
+
+The latest desktop installer is available here: [Download Shadow for Mac](https://github.com/Converse-AI-Inc/Shadow/releases/latest/download/Shadow.dmg).
+
+## Required
+
+- A Mac desktop or laptop
+- A Shadow account
+- Access to the meeting tools your team uses
+- Permission to grant local Mac privacy permissions
+
+## Core software and access expectations
+
+- Users need access to the calendar and meeting tools they actually use
+- Users should know whether they are signing in with Google or Microsoft
+- Enterprise users should know whether they are an admin or a member
+
+## Recommended setup by user type
+
+### Enterprise admin using Microsoft, Outlook, Teams, and Salesforce
+
+- Microsoft work account
+- Outlook calendar access
+- Microsoft Teams meeting links on calendar events
+- Salesforce access for the admin who will connect it
+
+### Enterprise member using Microsoft, Outlook, and Teams
+
+- invited work email address
+- access to the same Microsoft account used for work calendar
+- Outlook calendar events with valid Teams links
+
+### Individual free or pro user, typically with Google
+
+- Google account
+- Google Calendar access
+- supported meeting links on calendar events where applicable
+
+## Why the Mac permissions matter
+
+Shadow uses Mac permissions to support live meeting workflows:
+
+- `Accessibility`: detect meeting launches and help with app-level coordination
+- `Microphone`: capture the user's side of the conversation
+- `System Audio`: capture meeting participant audio
+
+Without these permissions, the setup completes only partially and live meeting workflows may fail.
+
+## Supported meeting platforms
+
+Shadow currently recognizes supported meeting URLs and live workflows for:
+
+- Zoom
+- Microsoft Teams
+- Google Meet
+- Webex
+
+<Note>
+  Shadow runs natively on the Mac rather than joining the meeting as a separate bot participant.
+</Note>
+
+<Tip>
+  Teams does not need a separate standalone integration for meeting detection. Salesforce is not a universal requirement; it is primarily relevant for enterprise admin CRM workflows.
+</Tip>

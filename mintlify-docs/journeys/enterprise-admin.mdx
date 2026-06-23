@@ -1,0 +1,130 @@
+---
+title: "Enterprise Admin"
+description: "Comprehensive onboarding for enterprise admins using Mac, Microsoft, Teams, and Salesforce."
+---
+
+This journey is for the person rolling out Shadow to a team on the enterprise plan. It assumes the team works on Mac, uses Microsoft for sign-in and calendar, joins meetings in Teams, and wants Salesforce available after meetings.
+
+## What the admin is responsible for
+
+- Installing and signing in to Shadow
+- Granting Mac and Microsoft permissions
+- Confirming Outlook calendar meetings appear in Shadow
+- Connecting Salesforce for the org
+- Inviting users
+- Configuring what admins can see across the org
+
+## Before you begin
+
+- A Mac that can run the Shadow desktop app
+- A Shadow enterprise subscription or a provisioned enterprise org
+- A Microsoft work account
+- Access to Salesforce with permission to complete the OAuth flow
+- Team members' work email addresses for invites
+
+## How this flow works in Shadow
+
+- Microsoft sign-in requests **calendar access during login**
+- Shadow uses that calendar access to sync Outlook meetings
+- Teams meetings do not need a separate Teams integration to be detected
+- Salesforce connection is available only to enterprise admins
+
+## Enterprise admin journey
+
+<Steps>
+  <Step title="Install Shadow on your Mac">
+    Download the latest Mac app from [GitHub Releases](https://github.com/Converse-AI-Inc/Shadow/releases/latest/download/Shadow.dmg), open `Shadow.dmg`, move Shadow to Applications, and launch it.
+  </Step>
+  <Step title="Sign in with Microsoft">
+    On the login screen, choose **Continue with Microsoft**. During this flow, Shadow requests Microsoft calendar access so it can read upcoming meetings from Outlook.
+  </Step>
+  <Step title="Grant Mac permissions">
+    Approve Accessibility, Microphone, and Screen or System Audio permissions so Shadow can detect supported meetings and capture audio correctly on macOS.
+  </Step>
+  <Step title="Confirm your calendar is working">
+    Open the dashboard and verify that upcoming Outlook meetings appear in the **Next Up** area. If a Teams meeting is on your Outlook calendar and includes a valid meeting URL, Shadow can schedule a pre-meeting prompt and support launch from there.
+  </Step>
+  <Step title="Understand the Teams behavior">
+    You do not need a separate Teams integration just to detect or run Teams meetings. Shadow can surface upcoming meetings from the calendar and can also auto-detect supported live meeting windows on the desktop.
+  </Step>
+  <Step title="Connect Salesforce">
+    Open **Integrations** and connect Salesforce. This step is meant for the enterprise admin because Salesforce connection management is restricted to enterprise admins.
+  </Step>
+  <Step title="Invite your users">
+    Open the org users page, send invites to your team, and choose whether each invite should be an **admin** or **member**.
+  </Step>
+  <Step title="Set org visibility expectations">
+    Review the org visibility defaults. External meetings are visible to admins by default. Internal meetings are not shared by default and must be shared intentionally by the meeting owner when appropriate.
+  </Step>
+  <Step title="Run the first live workflow yourself">
+    Join an upcoming Teams meeting from Shadow or launch the assistant when the meeting is detected. After the call, review summary, action items, and any Salesforce proposals.
+  </Step>
+</Steps>
+
+## What users will experience after admin setup
+
+Once the admin path is complete:
+
+- team members can accept invites and join the org
+- members can sign in and see their own meetings
+- admins can manage users and roles
+- admins can manage the Salesforce connection
+- meeting visibility follows org and member visibility rules
+
+## Org roles in practice
+
+### Admin
+
+- can invite users
+- can remove users
+- can change user roles
+- can manage Salesforce
+- can review meetings that are visible under org visibility rules
+
+### Member
+
+- can join the org through an invite
+- can use Shadow for their own meetings
+- cannot manage Salesforce
+- cannot manage org users
+- can share their own internal meetings when needed
+
+## Visibility model to explain during rollout
+
+This is one of the most important parts of enterprise onboarding.
+
+- **External meetings** are visible to admins by default
+- **Internal meetings** are not shared by default
+- A member can share one of their own internal meetings later
+- Admin visibility also depends on org-wide visibility settings
+
+If you skip this explanation during rollout, users will assume either that everything is private or that everything is visible. The product is more specific than that.
+
+## First-run success checklist
+
+- Admin can sign in with Microsoft
+- Upcoming Outlook meetings appear on the dashboard
+- A Teams meeting can be opened from Shadow
+- Salesforce shows as connected in Integrations
+- At least one team member invite is sent
+- Admin understands what is and is not visible across the org
+
+## Common failure points
+
+- The user signs in with the wrong Microsoft account
+- Microsoft consent is not granted fully, so calendar sync does not complete
+- The Teams meeting is missing or has an invalid join link in the calendar event
+- Salesforce is attempted by a non-admin user
+- The invited user tries to accept the invite with a different email address
+
+## Supporting pages
+
+- [System Requirements](/getting-started/system-requirements)
+- [Permissions](/getting-started/permissions)
+- [Connect Outlook](/getting-started/connect-outlook)
+- [Connect Salesforce](/getting-started/connect-salesforce)
+- [Enterprise Member](/journeys/enterprise-member)
+
+<Note>
+  If your rollout is primarily for single users rather than teams, use [Individual Free or Pro](/journeys/individual-google) instead of the enterprise path.
+</Note>

@@ -1,0 +1,66 @@
+---
+title: "User Journeys Overview"
+description: "Choose the right Shadow onboarding path for enterprise admins, enterprise members, or individual users."
+---
+
+Shadow has three onboarding paths. They should not be documented as one blended setup flow because the product behaves differently depending on plan, role, and identity provider.
+
+- **Enterprise admin** for teams rolling out Shadow with Microsoft, Teams, and Salesforce
+- **Enterprise member** for invited users joining an existing enterprise org
+- **Individual user** for free or pro users, typically starting with Google
+
+## Choose the right path
+
+<CardGroup cols={3}>
+  <Card title="Enterprise Admin" icon="building" href="/journeys/enterprise-admin">
+    Set up Shadow for your team, connect Salesforce, invite users, and configure org visibility.
+  </Card>
+  <Card title="Enterprise Member" icon="users" href="/journeys/enterprise-member">
+    Accept an invite, sign in, see upcoming meetings, and understand what is shared with admins.
+  </Card>
+  <Card title="Individual Free or Pro" icon="user" href="/journeys/individual-google">
+    Install Shadow, sign in with Google, and run your first meeting workflow as a single user.
+  </Card>
+</CardGroup>
+
+## Product behavior that affects onboarding
+
+- Signing in with **Microsoft** requests Microsoft calendar access during login.
+- Signing in with **Google** requests Google Calendar access during login.
+- **Teams does not require a separate integration** for meeting detection.
+- **Salesforce is managed by enterprise admins**, not by every user.
+- Enterprise orgs start with **external meetings visible to admins** and **internal meetings not shared by default**.
+
+## Which journey to use
+
+### Use Enterprise Admin when
+
+- the customer is on the enterprise plan
+- the user is setting up the team rollout
+- the user needs to invite others
+- the user needs Salesforce connected
+- the user needs to understand org-wide meeting visibility
+
+### Use Enterprise Member when
+
+- the user received an invite from an admin
+- the user needs to join an existing org
+- the user needs to understand what admins can see
+- the user does not manage Salesforce or other users
+
+### Use Individual Free or Pro when
+
+- the user is setting up Shadow only for themselves
+- the user is not joining an enterprise org
+- the user is typically starting with Google
+
+## Recommended reading order
+
+1. Pick the right journey for the role and plan
+2. Complete system requirements and permissions
+3. Configure only the integrations that actually apply
+4. Run the first meeting through prep, live meeting, and review
+
+<Tip>
+  For the most common enterprise rollout, start with [Enterprise Admin](/journeys/enterprise-admin), then hand members [Enterprise Member](/journeys/enterprise-member).
+</Tip>
