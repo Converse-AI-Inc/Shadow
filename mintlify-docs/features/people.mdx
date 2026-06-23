@@ -1,0 +1,86 @@
+---
+title: "People"
+description: "Browse a relationship list built from your meetings, with company info, meeting history, open action items, pinning, and inline edits."
+---
+
+The People section turns Shadow into a relationship view that builds itself from your meetings. Every distinct person you have met shows up automatically — no data entry, no contact import.
+
+## What users do here
+
+- see everyone they have met, deduped across email addresses
+- find a person fast with search, sort, and External/Internal tabs
+- open a profile to review meeting history, company, and open follow-ups
+- pin the people they care about most
+- correct a name, company, or title inline
+- merge two entries when the same person used two emails
+
+## How the list is built
+
+People appears in the left sidebar of the desktop app. The list is populated from your calendar and meeting history:
+
+- attendees on past and upcoming meetings are resolved into a single person per human
+- the same person under multiple email addresses is folded together when Shadow is confident
+- bots, room resources, no-reply senders, and your own account are filtered out
+- enrichment (photo, title, company) is attached when available and persists between meetings
+- the list refreshes in the background; you can also force a rebuild from the page
+
+## Key fields on a person
+
+- **Name, title, company** — from enrichment, with your inline edits winning over the computed value
+- **Last met** — the most recent past meeting with that person
+- **Next meeting** — the next scheduled meeting with that person, if any
+- **Open loops** — outstanding action items tied to that person
+- **Going cold** — flagged when an open loop has been silent for about two weeks
+- **Pinned** — up to three people can be pinned to the top of the list
+
+## Tabs, search, and sort
+
+<Steps>
+  <Step title="Switch between External and Internal">
+    External shows people outside your company domain. Internal shows teammates.
+  </Step>
+  <Step title="Search by name, email, or company">
+    The search box filters the visible list as you type.
+  </Step>
+  <Step title="Sort the results">
+    Choose **Recently met**, **Most met**, or **A–Z**. Pinned people stay at the top regardless of sort.
+  </Step>
+  <Step title="Scroll for more">
+    The list pages in additional results as you scroll.
+  </Step>
+</Steps>
+
+## The profile drawer
+
+Selecting a person opens a drawer with:
+
+- header with photo, name, title, company, and primary email
+- a meeting timeline with past meetings and the next scheduled meeting
+- open action items tied to that person
+- inline edit for name, company, and title
+- a pin toggle
+
+### Inline edits
+
+Inline edits act as overrides. They win over enrichment values and survive future rebuilds. Clear an edit to fall back to the computed value.
+
+### Pinning
+
+You can pin up to three people. Pinned people sort to the top of the list, most recently pinned first. Unpin one to free up a slot.
+
+### Merging two entries
+
+If the same person appears twice — for example a personal address and a work address — open one entry and merge it with the other email. The merge is durable: it is reapplied every time the list rebuilds, so the two entries stay folded together going forward.
+
+## Plan availability
+
+- The populated People list, search, tabs, sort, pinning, and inline edits are available on all plans, including Free.
+- Deeper meeting prep depth inside the profile drawer is part of paid plans. Upgrade prompts appear in the drawer where applicable.
+
+## Best practices
+
+- Pin the three people you most want to keep warm.
+- Use the **Going cold** flag as a weekly nudge to follow up on stalled threads.
+- Merge duplicate entries the first time you notice them — once merged, the link is permanent.
+- Correct a wrong company or title once; the override persists across rebuilds.
+- Use **Internal** to find a teammate quickly without scrolling past customers.
