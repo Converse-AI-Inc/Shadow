@@ -1,0 +1,46 @@
+---
+title: "Connect Salesforce"
+description: "Connect Salesforce for enterprise post-meeting CRM workflows."
+---
+
+Salesforce is not a general-purpose setup step for every Shadow user.
+
+In the current product, Salesforce connection management is intended for **enterprise admins**. It is used after meetings so Shadow can propose CRM updates and let the user approve what should be written back.
+
+## What Salesforce is used for
+
+- Propose new leads
+- Propose new contacts
+- Propose new opportunities
+- Surface CRM-ready updates after the meeting
+
+## Connect Salesforce
+
+<Steps>
+  <Step title="Confirm you are the enterprise admin">
+    Salesforce connection management is meant for the enterprise admin, not for every member in the org.
+  </Step>
+  <Step title="Open Integrations">
+    Open the Integrations page in Shadow.
+  </Step>
+  <Step title="Connect Salesforce">
+    Click connect on the Salesforce card and finish the OAuth flow in your browser.
+  </Step>
+  <Step title="Return to Shadow">
+    When the browser flow completes, return to the desktop app and confirm Salesforce shows as connected.
+  </Step>
+</Steps>
+
+## What happens after a meeting
+
+If Salesforce is connected, Shadow can analyze meeting context and prepare proposals on the review page. The user can then push approved proposals to Salesforce.
+
+<Note>
+  The review flow is approval-based. Users stay in control of what gets written back into Salesforce.
+</Note>
+
+<Warning>
+  If a user is not an enterprise admin, they should not be instructed to connect Salesforce as part of their personal onboarding flow.
+</Warning>
+
+For rollout help or enterprise questions, contact [hello@shadowlabs.ai](mailto:hello@shadowlabs.ai?subject=Shadow%20Salesforce%20Setup).

@@ -1,0 +1,43 @@
+---
+title: "Permissions"
+description: "Grant the Mac permissions Shadow needs for live meeting workflows."
+---
+
+Shadow asks for a small set of Mac permissions during onboarding. These are required for the desktop meeting workflow.
+
+## Required permissions
+
+| Permission | Why Shadow needs it |
+| --- | --- |
+| Accessibility | Detect meeting launches and coordinate desktop behavior |
+| Microphone | Capture your audio during meetings |
+| System Audio | Capture participant audio from supported meeting apps |
+
+## Setup flow
+
+<Steps>
+  <Step title="Open permission setup">
+    During onboarding, continue to the permissions step and click the enable action for each required permission.
+  </Step>
+  <Step title="Approve the permission in macOS">
+    macOS opens the relevant settings screen. Grant access to Shadow there.
+  </Step>
+  <Step title="Return to Shadow">
+    Go back to the Shadow app and let it refresh the permission state.
+  </Step>
+  <Step title="Restart if prompted">
+    Some permission changes may require restarting the app before onboarding continues cleanly.
+  </Step>
+</Steps>
+
+## Troubleshooting
+
+- If a permission still appears missing after approval, return to the Mac settings page and confirm Shadow is checked.
+- If Shadow requests a restart, restart the app before continuing.
+- If live meeting recording fails, confirm both Microphone and System Audio are granted.
+
+<Tip>
+  The onboarding flow is designed to resume at the next step after restart, so users do not need to start over.
+</Tip>
+
+If the app is not installed yet, start from [Download Shadow for Mac](https://github.com/Converse-AI-Inc/Shadow/releases/latest/download/Shadow.dmg).

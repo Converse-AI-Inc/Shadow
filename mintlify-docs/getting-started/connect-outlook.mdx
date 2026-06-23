@@ -1,0 +1,80 @@
+---
+title: "Connect Outlook"
+description: "Understand how Microsoft sign-in, Outlook calendar access, and optional Outlook integrations work in Shadow."
+---
+
+There are two different Microsoft-related concepts in Shadow, and they should not be confused:
+
+1. **Microsoft sign-in**, which can grant calendar access during login
+2. **Outlook integrations**, which are used for additional follow-through workflows such as mail and calendar write actions
+
+## What happens during Microsoft sign-in
+
+When a user chooses **Continue with Microsoft**, Shadow requests Microsoft calendar access during that login flow. That is the path Shadow uses to read upcoming Outlook meetings for the dashboard and meeting detection workflow.
+
+For many users, especially those onboarding for Outlook plus Teams, this is the most important setup step.
+
+## What the separate Outlook integrations are for
+
+Shadow also exposes explicit Outlook connection surfaces in Integrations for follow-through and write workflows.
+
+### Outlook Mail
+
+- Draft follow-up emails after meetings
+- Draft replies on existing email threads
+- Pull message context into meeting follow-through workflows
+
+### Outlook Calendar
+
+- Propose or create calendar follow-ups
+- Support calendar write workflows beyond basic login-based meeting sync
+
+## Recommended setup by user type
+
+### Enterprise user working with Outlook and Teams
+
+Start with:
+
+1. sign in with Microsoft
+2. confirm upcoming meetings appear
+3. connect Outlook Mail only if the user wants email follow-through
+4. connect Outlook Calendar only if the user needs additional calendar action workflows
+
+### User troubleshooting missing Outlook meetings
+
+Check:
+
+1. they actually signed in with Microsoft
+2. calendar consent was granted during login
+3. the meeting exists in Outlook calendar
+4. the meeting has a valid join link
+
+## Connect the additional Outlook integrations
+
+<Steps>
+  <Step title="Open Integrations">
+    In the Shadow desktop app, open the Integrations page.
+  </Step>
+  <Step title="Connect Outlook Mail">
+    Click connect on the Outlook Mail card and complete the Microsoft OAuth flow in your browser.
+  </Step>
+  <Step title="Connect Outlook Calendar">
+    Repeat the same flow for Outlook Calendar.
+  </Step>
+  <Step title="Return to Shadow">
+    Return to the app and let Shadow refresh the integration state.
+  </Step>
+</Steps>
+
+## Important behavior
+
+- Microsoft sign-in is what enables the core Outlook-calendar-backed meeting experience.
+- Shadow creates Outlook drafts for users to review.
+- Shadow does not silently send emails on the user's behalf.
+- Teams does not require a separate standalone integration just to detect meetings.
+
+## If reconnect is required
+
+If Outlook access expires or Microsoft revokes the token, Shadow may show the integration as disconnected or prompt the user to reconnect. Use the reconnect action from the Integrations page and complete the OAuth flow again.
+
+If users are starting from scratch, send them through [Enterprise Admin](/journeys/enterprise-admin), [Enterprise Member](/journeys/enterprise-member), or [Individual Free or Pro](/journeys/individual-google) first so the app and Mac permissions are already in place.

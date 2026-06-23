@@ -1,0 +1,91 @@
+---
+title: "Enterprise Member"
+description: "Onboarding for enterprise members joining an existing Shadow org."
+---
+
+This journey is for a user who has been invited into an existing enterprise Shadow org. The user is not responsible for connecting Salesforce or managing other users.
+
+## What the member needs to do
+
+- Install Shadow on a Mac
+- Accept the invite with the correct email address
+- Sign in
+- Grant calendar and Mac permissions
+- Run Shadow in upcoming meetings
+- Understand what is visible to admins
+
+## Before you begin
+
+- A Shadow invite sent to your work email address
+- A Mac that can run the Shadow desktop app
+- Access to the same Microsoft or Google account that matches your invite and work calendar
+
+## Enterprise member journey
+
+<Steps>
+  <Step title="Accept your invite">
+    Use the invite link sent by your admin. The email address on the invite must match the email address you use when signing in to Shadow.
+  </Step>
+  <Step title="Install Shadow on your Mac">
+    Download the latest Mac app from [GitHub Releases](https://github.com/Converse-AI-Inc/Shadow/releases/latest/download/Shadow.dmg), open `Shadow.dmg`, move Shadow to Applications, and launch it.
+  </Step>
+  <Step title="Sign in">
+    Follow your team's standard identity path. If your team runs on Outlook and Teams, sign in with Microsoft so Shadow can request calendar access during login and pull in Outlook meetings.
+  </Step>
+  <Step title="Grant Mac permissions">
+    Approve Accessibility, Microphone, and Screen or System Audio permissions so Shadow can detect meetings and capture audio on macOS.
+  </Step>
+  <Step title="Check your upcoming meetings">
+    Open the dashboard and verify that your upcoming meetings appear in **Next Up**. Teams meetings do not require a separate Teams integration in order to appear or be detected.
+  </Step>
+  <Step title="Open the prep view before a meeting">
+    Open the meeting from the dashboard to review context before the call.
+  </Step>
+  <Step title="Join the meeting and run Shadow">
+    Launch Shadow from the dashboard, from the pre-meeting prompt, or when the live meeting is detected on your desktop.
+  </Step>
+  <Step title="Review what happened after the call">
+    Open the review page to check summary, transcript, action items, and any post-meeting outputs.
+  </Step>
+  <Step title="Share internal meetings only when needed">
+    If you are in an internal-only meeting and want your admin to see it, use the internal meeting share toggle on the meeting review surface.
+  </Step>
+</Steps>
+
+## What members do not need to do
+
+- connect Salesforce
+- manage org users
+- configure org-wide admin visibility
+
+Those are admin responsibilities.
+
+## Visibility model for members
+
+Members should understand this clearly:
+
+- External meetings may be visible to admins depending on org policy
+- Internal meetings are not shared by default
+- You can share your own internal meeting when appropriate
+
+## What a good first-run looks like
+
+- The invite is accepted successfully
+- The user signs in with the correct account
+- Upcoming meetings appear in the dashboard
+- A Teams or calendar-backed meeting can be launched successfully
+- The user understands what is visible to admins
+
+## Common failure points
+
+- The user signs in with a different email from the invited address
+- macOS permissions are skipped
+- The user expects to manage Salesforce even though they are a member
+- The user assumes all internal meetings are automatically visible to admins
+
+## Supporting pages
+
+- [Enterprise Admin](/journeys/enterprise-admin)
+- [Permissions](/getting-started/permissions)
+- [Connect Outlook](/getting-started/connect-outlook)
+- [Meeting Review](/features/meeting-review)

@@ -1,0 +1,66 @@
+---
+title: "Meeting Review"
+description: "Review the summary, transcript, actions, decisions, and CRM proposals after the meeting."
+---
+
+The review page is where the meeting becomes usable follow-through.
+
+![Automatic recap and CRM updates](/images/automatic-recap-crm-updates.png)
+
+## What appears on the review page
+
+- summary
+- action items
+- action threads
+- key decisions
+- agenda notes
+- transcript
+- source usage
+- meeting context
+- Salesforce proposals when connected
+
+## Important review behaviors
+
+- if a transcript exists but a summary has not been generated yet, Shadow can generate it
+- action threads may continue preparing in the background and then become reviewable
+- transcript remains the source of truth when a summary or action needs verification
+- source usage helps the user see what Shadow relied on during the meeting
+
+## Org sharing and visibility
+
+For org users, the review page can also reflect visibility state:
+
+- external meetings may be visible to admins depending on org policy
+- internal meetings can be shared intentionally
+- members can use the internal meeting share toggle on their own meetings
+- admins may see a visibility label when reviewing relevant meetings
+
+## Typical review flow
+
+<Steps>
+  <Step title="Open the meeting review page">
+    Return from the live meeting flow or open the meeting later from the dashboard.
+  </Step>
+  <Step title="Validate the summary">
+    Confirm that the recap matches the important outcomes of the meeting.
+  </Step>
+  <Step title="Check action items">
+    Review owners, destinations, and clarity of each next step.
+  </Step>
+  <Step title="Review action threads and approvals">
+    Confirm that follow-through is routed to the right destination before approving it.
+  </Step>
+  <Step title="Confirm decisions and notes">
+    Look for missing or misframed decisions before using the output downstream.
+  </Step>
+  <Step title="Review the transcript when precision matters">
+    Use the transcript as the source of truth for disputed or sensitive details.
+  </Step>
+</Steps>
+
+## What good review hygiene looks like
+
+- summaries are checked before sharing externally
+- action items are approved or clarified before execution
+- CRM proposals are pushed only after the user confirms they are right
+- internal meeting visibility is checked before sharing with an admin or team
